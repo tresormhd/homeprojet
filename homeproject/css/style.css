@@ -1,0 +1,129 @@
+* {
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff; 
+}
+/* header */
+nav{
+  height: 110px;
+  background-color: transparent;
+}
+nav ul li{
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+  left: 180px;
+}
+header{
+ margin-bottom: 20px; 
+ background-color: #343a40;
+}
+.view {
+    background: url("../images/m1.jpg")no-repeat center center;
+    background-size: cover;
+}
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+/*img{
+  width: 100%;
+  height: auto;
+  display: block;
+}*/
+#logos{
+  font-size: 45px;
+  position: relative;
+  top: 0;
+  left: 180px;
+}
+#logos span{
+  font-family: 'pacifico', cursive;
+  font-size: 2em;
+  color: #ffc107;
+}
+/* news letter */
+.container p{
+  display: block;
+  font-weight: bold;
+  max-width: 60%;
+  text-align: center;
+  margin-left: 20%;
+  margin-top: 50px;
+  color: black ;/* #343a40*/
+}
+
+.tbox, .btn1{
+   border:none;
+   outline: none;
+
+}
+.tbox{
+  width: 0px;
+  transition: 0.8s;
+}
+#newletter{
+  border-top: 1px solid #000;
+  margin-top: 100px;
+  height: 400px;
+  width: 100%;
+  /*background-color: blue;*/
+  background: url("../images/img1.jpg") no-repeat center;
+  background-size: cover;
+  padding: 50px 10px;
+  text-align: center;
+  color: #000;
+  font-size: 25px;
+}
+.btn1{
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #ffc107;
+  text-transform: uppercase;
+  color: #343a40;
+  font-weight: bold; 
+  cursor: pointer;
+}
+.email-box:hover > .tbox, .tbox:focus {
+  width:40%;
+  padding: 10px;
+}
+
+.email-box{
+  display: flex;
+  height: 40px;
+  justify-content: center;
+}
+.email-box i{
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 40px;
+  background-color: #ffc107;
+  line-height: 40px;
+}
+.email-box input[type=email]{
+  color: black;
+}
+/*footer*/
+footer{
+  background-color: #343a40;
+  color: #fff;
+}
+#contacts p{
+  color: #fff;
+}
